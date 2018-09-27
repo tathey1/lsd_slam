@@ -116,13 +116,13 @@ void displayImage(const char* windowName, const cv::Mat& image, bool autoSize)
 
 int waitKey(int milliseconds)
 {
-	return cv::waitKey(milliseconds);
+	return 1; //cv::waitKey(milliseconds);
 }
 
 int waitKeyNoConsume(int milliseconds)
 {
 	// Cannot implement this with OpenCV functions.
-	return cv::waitKey(milliseconds);
+	return 1; //cv::waitKey(milliseconds);
 }
 
 void closeAllWindows()
